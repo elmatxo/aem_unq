@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#37bc9b" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#37bc9b">
+    <meta name="abstract" content="CV: Terrence Ellis | Proyecto final integrador TICMAS" />
+    <meta name="copyright" content="(c) 2023" />
+    <meta name="author" content="Matias Petrini" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+    <link type="image/x-icon" href="favicon.ico" rel="icon">
+    <title>CV | Proyecto final integrador TICMAS</title>
+    <script type="text/javascript" src="js/function.js"></script>
+    <script src="https://kit.fontawesome.com/7973197e30.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <button id="btn-oscuro" onclick="modoOscuro()"><i class='fa-solid fa-circle-half-stroke'></i> Modo oscuro</button>
+        <p id="ticmas-cv-bienvenida"></p>
+    </header>
+    <div id="ticmas-cv-navigation">
+        <button class="pestania datospersonales cv-pestania-selected" onclick="navCv(event, 'ticmas-cv-datospersonales')">Datos personales</button>
+        <button class="pestania formacionacad" onclick="navCv(event, 'ticmas-cv-formacionacad')">Formación</button>
+        <button class="pestania explaboral" onclick="navCv(event, 'ticmas-cv-explaboral')">Experiencia laboral</button>
+        <button class="pestania informatica" onclick="navCv(event, 'ticmas-cv-informatica')">Informática</button>
+        <button class="pestania cursos" onclick="navCv(event, 'ticmas-cv-cursos')">Cursos</button>
+    </div>
+    <div id="ticmas-cv-container">
+        <h2 class="ticmas-cv-title">TERRENCE ELLIS</h2>
+        <h3 class="ticmas-cv-subtitle">PROGRAMADOR / DESARROLLADOR WEB</h3><br />
+            <div id="ticmas-cv-leftbar"><img id="cv-foto" /><br />
+                <h3>ACERCA DE MI</h3>
+                    <p class="aboutme">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit anim id est laborum.</p><br />
+                    <p class="socialmedia">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-2xl fa-fw"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter fa-2xl fa-fw"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin fa-2xl fa-fw"></i></a>
+                    </p>
+        </div>
+        <div id="ticmas-cv-datospersonales" class="ticmas-cv-content">
+            <h2>DATOS PERSONALES</h2>
+                <i class="fa-solid fa-user fa-lg fa-fw"></i> <span class="ticmas-cv-lineadata">Nombre y Apellido: <strong><span id="nombre"></span> <span id="apellido"></span></strong></span><br />
+                <i class="fa-solid fa-calendar-days fa-lg fa-fw"></i> <span class="ticmas-cv-lineadata">Fecha de nacimiento: <strong><span id="fechanacimiento"></span></strong></span><br />
+                <i class="fa-solid fa-address-card fa-lg fa-fw"></i> <span class="ticmas-cv-lineadata">DNI: <strong>99.999.999</strong></span><br />
+                <i class="fa-solid fa-image-portrait fa-lg fa-fw"></i> <span class="ticmas-cv-lineadata">Edad: <strong><span id="edad"></span> años</strong></span><br />
+                <i class="fa-solid fa-person fa-lg fa-fw"></i> <span class="ticmas-cv-lineadata">Género: <strong><span id="genero"></span></strong></span><br />
+                <i class="fa-solid fa-house fa-lg fa-fw"></i> <span class="ticmas-cv-lineadata">Domicilio: <strong><span id="calle"></span> <span id="callenro"></span></strong> (<u>CP:</u> <strong><span id="codigopostal"></span></strong>)</span><br />
+                <i class="fa-solid fa-earth-americas fa-lg fa-fw"></i> <span class="ticmas-cv-lineadata">Ciudad: <strong><span id="ciudad"></span>, <span id="pais"></span></strong></span><br />
+                <i class="fa-solid fa-phone fa-lg fa-fw"></i> <span class="ticmas-cv-lineadata">Teléfono: <strong><span id="telefono"></span></strong></span><br />
+                <i class="fa-solid fa-mobile-screen-button fa-lg fa-fw"></i> <span class="ticmas-cv-lineadata">Celular: <strong><span id="celular"></span></strong></span><br />
+                <i class="fa-solid fa-envelope fa-lg fa-fw"></i> <span class="ticmas-cv-lineadata">E-mail: <strong><span id="email"></span></strong></span>
+
+            <h3>INFORMACIÓN ADICIONAL</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet<span id="puntossuspensivos">...</span>
+                    <span id="mas">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.</span>
+                </p>
+                <button onclick="verMas()" id="btnTxt">Ver más</button>
+        </div>
+        <div id="ticmas-cv-formacionacad" class="ticmas-cv-content" style="display: none;">
+            <h2>FORMACIÓN ACADÉMICA</h2>
+                <p><strong>TITULACIÓN UNIVERSITARIA OBTENIDA / 2016</strong><br />
+                    Institución académica</p>
+                <p><strong>TITULACIÓN SECUNDARIA OBTENIDA / 2015</strong><br />
+                    Institución académica</p>
+            <h2>IDIOMAS</h2>
+                <p><strong>Inglés:</strong> nivel intermedio de lectura, escritura y traductorado.</p>
+                <p><strong>Italiano:</strong> nivel intermedio de escritura.</p>
+        </div>
+        <div id="ticmas-cv-explaboral" class="ticmas-cv-content" style="display: none;">
+            <h2>EXPERIENCIA LABORAL</h2>
+                <ul>
+                    <li><strong>CARGO EN LA EMPRESA / 2016 - PRESENTE</strong><br />
+                        <i>Empresa</i><br />
+                        Describe aquí las funciones realizadas en la empresa, describe aquí las funciones realizadas en la
+                        empresa, describe aquí las funciones realizadas en la empresa, describe aquí las funciones
+                        realizadas en
+                        la empresa.
+                    </li>
+                    <li><strong>CARGO EN LA EMPRESA / 2015 - 2016</strong><br />
+                        <i>Empresa</i><br />
+                        Describe aquí las funciones realizadas en la empresa, describe aquí las funciones realizadas en la
+                        empresa, describe aquí las funciones empresa, describe aquí las funciones realizadas en la empresa.
+                    </li>
+                    <li><strong>CARGO EN LA EMPRESA / 2010 - 2015</strong><br />
+                        <i>Empresa</i><br />
+                        Describe aquí las funciones realizadas en la empresa, describe aquí las funciones realizadas en la
+                        empresa, describe aquí las funciones empresa, describe aquí las funciones realizadas en la empresa.
+                    </li>
+                    <li><strong>CARGO EN LA EMPRESA / 2002 - 2010</strong><br />
+                        <i>Empresa</i><br />
+                        Describe aquí las funciones realizadas en la empresa, describe aquí las funciones realizadas en la
+                        empresa, describe aquí las funciones empresa, describe aquí las funciones realizadas en la empresa.
+                    </li>
+                </ul>
+        </div>
+        <div id="ticmas-cv-informatica" class="ticmas-cv-content" style="display: none;">
+            <h2>INFORMÁTICA</h2>
+                <ul>
+                    <li><strong>Sistemas operativos:</strong> Microsoft Windows 95/98/XP/Vista/Seven/8/10/11, Mac OS X Lion,
+                        Ubuntu.</li>
+                    <li><strong>Ofimática:</strong> Conocimientos avanzados de paquete Microsoft Office -Word, Excel,
+                        PowerPoint, Outlook,
+                        FrontPage-, LibreOffice, Microsoft Edge, Mozilla Firefox, Google Chrome, Opera, Safari, Thunderbird,
+                        Zoom, Skype, Zimbra, clientes de webmail.</li>
+                    <li><strong>Edición de imagen:</strong> Adobe Photoshop, Adobe Illustrator, Corel PaintShop Pro,
+                        CorelDraw Graphics Suite.</li>
+                    <li><strong>Edición de video y audio:</strong> Avid, Adobe Premiere Pro, Adobe After Effects, Sony Vegas
+                        Pro, Audacity. Codecs
+                        y conversores de audio y video.</li>
+                    <li><strong>Web:</strong> Adobe Dreamweaver, Notepad++. Manejo de lenguajes de programación (HTML,
+                        HTML5, PHP, MySQL, XML,
+                        CSS/3), diseño/maquetación de sitios y aplicaciones web (scripts –Wordpress, Joomla, Drupal, Moodle,
+                        phpBB). Software de streaming (OBS Studio). Facebook, Twitter, Instagram (IGTV), YouTube, Twitch.
+                        Herramientas Google (Gmail, Drive, Meet, Documentos de Google, Google Forms). Plataforma de
+                        distribución
+                        de podcasts AnchorFM. SoundCloud.</li>
+                </ul>
+        </div>
+        <div id="ticmas-cv-cursos" class="ticmas-cv-content" style="display: none;">
+            <h2>CURSOS</h2>
+                <ol>
+                    <li><strong>Nombre completo del curso / 2016</strong><br />
+                        Institución académica</li>
+                    <li><strong>Nombre completo del curso / 2012</strong><br />
+                        Institución académica</li>
+                    <li><strong>Nombre completo del curso / 2010</strong><br />
+                        Institución académica</li>
+                    <li><strong>Nombre completo del curso / 2005</strong><br />
+                        Institución académica</li>
+                </ol>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <strong>Proyecto integrador final TICMAS</strong> © Copyright 2023 Matias Petrini<br />Con
+        información provista por <a href="https://randomuser.me" target="_blank">Randomuser.me</a> | <a
+        href="mailto:contacto @ ejemplo.com">Contacto</a><br />Recursos de <a href="https://fontawesome.com"
+        target="_blank">Font Awesome</a> | <a href="https://fonts.google.com">Google Fonts</a>
+    </footer>
+
+<script type="text/javascript" src="js/function2.js"></script>
+
+</body>
+</html>
