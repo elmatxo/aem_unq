@@ -1,0 +1,440 @@
+/*
+TICMAS | Proyecto final integrador: CV
+Ver. 1.0
+Act. 25.02.2023
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap');
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 0.9em;
+    line-height: 2.2em;
+    background-color: #e9ecef;
+    color: #434a54;
+}
+
+.bodyoscuro {
+    background-color: #212529;
+    color: #adb5bd;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px dotted rgba(0, 0, 0, 0.2);
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+    margin: 30px 0px 15px 0px;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+::selection {
+    background: #d0d0d0;
+    color: #434a54;
+}
+
+::-moz-selection {
+    background: #d0d0d0;
+    color: #434a54;
+}
+
+ol {
+    list-style-type: none;
+    list-style-type: decimal !ie;
+    margin: 0;
+    margin-left: 3em;
+    padding: 0;
+    counter-reset: li-counter;
+}
+
+ol li {
+    position: relative;
+    margin: 20px 0px 25px 0px;
+    padding-left: 20px;
+    min-height: 10px;
+    border-left: 1px dotted #999999;
+}
+
+ol li::before {
+    position: absolute;
+    top: 2px;
+    left: -1.6em;
+    width: 0.8em;
+    font-size: 1.7em;
+    line-height: 2em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-align: right;
+    color: #37bc9b;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
+
+ul {
+    margin: 0px 0px 0px 40px;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    position: relative;
+    margin: 15px auto;
+    padding: 0;
+    border: 0;
+    list-style-type: none;
+}
+
+ul li:before {
+    position: absolute;
+    margin: 0;
+    left: -1.8em;
+    padding: 0;
+    border: 0;
+    font-family: 'FontAwesome';
+    content: "\f35a";
+    color: #37bc9b;
+    display: inline-block;
+}
+
+strong,
+b {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+a,
+a:link,
+a:visited {
+    color: #37bc9b;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ed5565;
+    font-weight: 700;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.ticmas-cv-lineadata {
+    padding-left: 20px !important;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.8em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    color: #37bc9b;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.3em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    color: #37bc9b;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #37bc9b;
+}
+
+h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: .95em;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    color: #37bc9b;
+}
+
+h5 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    color: #37bc9b;
+}
+
+h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: .67em;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+    color: #37bc9b;
+}
+
+#ticmas-cv-navigation {
+    display: block;
+    margin: 30px auto -10px;
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    z-index: 0;
+}
+
+#ticmas-cv-container {
+    margin: 0 auto;
+    background-color: #fff;
+    width: 100%;
+    max-width: 1000px;
+    padding: 40px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+    border-radius: 15px;
+    overflow: auto;
+    z-index: 1;
+}
+
+#ticmas-cv-container.containeroscuro {
+    background-color: #51585e !important;
+    color: #fff;
+}
+
+#ticmas-cv-leftbar {
+    float: left;
+    width: 30%;
+    text-align: justify;
+    font-size: 0.88em;
+    line-height: 1.9em;
+    border-right: 1px dotted rgba(0, 0, 0, 0.2);
+    padding: 0 30px 0 0;
+}
+
+#ticmas-cv-leftbar p.aboutme {
+    text-indent: 30px;
+}
+
+#ticmas-cv-leftbar p.socialmedia {
+    text-align: center;
+}
+
+a.socialmedia,
+a.socialmedia:link {
+    padding-right: 15px;
+}
+
+p.socialmedia>a:last-child {
+    padding-right: 0px;
+}
+
+.ticmas-cv-content {
+    float: left;
+    width: 70%;
+    padding: 0 0 0 30px;
+    text-align: justify;
+}
+
+#cv-foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+h2.ticmas-cv-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #393f48;
+    letter-spacing: 3px;
+    word-spacing: 8px;
+    margin: 0;
+}
+
+h3.ticmas-cv-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.9em;
+    color: #b3b3b3;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+    padding: 0px 0px 20px;
+    margin: -5px 0px 0px;
+}
+
+button.pestania {
+    display: inline-block;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 12px 20px 5px;
+    margin: 10px 3px;
+    border: 0px;
+    background-color: #37bc9b;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.85em;
+    color: #fff;
+    border-radius: 10px 10px 0px 0px;
+    text-transform: uppercase;
+    box-shadow: 0 -5px 8px rgba(0, 0, 0, .1);
+}
+
+button.pestania:hover {
+    background-color: #48cfad;
+}
+
+button.pestania:active {
+    background-color: #48cfad;
+}
+
+.cv-pestania-selected,
+.cv-pestania-selected:hover {
+    color: #393f48 !important;
+    background-color: #fff !important;
+}
+
+header {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.8em;
+    color: #434a54;
+    margin: 40px auto 0px;
+    text-align: right;
+    width: 100%;
+    max-width: 1000px;
+}
+
+footer {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 0.92em;
+    line-height: 1.9em;
+    color: #434a54;
+    margin: 50px auto 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+}
+
+#header.headeroscuro,
+#footer.footeroscuro {
+    color: #fff;
+}
+
+#btn-oscuro,
+#btnTxt {
+    background-color: #37bc9b;
+    border: 0;
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+#btn-oscuro:hover,
+#btnTxt:hover {
+    background-color: #2e9c81;
+    border: 0;
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#mas {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+    #ticmas-cv-leftbar {
+        width: 100%;
+        padding: 0;
+        border-right: 0;
+        border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+        float: right;
+    }
+
+    .ticmas-cv-content {
+        width: 100%;
+        padding: 0;
+        border: 0;
+    }
+
+    button.pestania {
+        display: inline-block;
+        outline: none;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s;
+        padding: 12px 7px 5px;
+        margin: 10px 0px;
+        border: 0px;
+        background-color: #37bc9b;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 0.63em;
+        color: #fff;
+        border-radius: 10px 10px 0px 0px;
+        text-transform: uppercase;
+        box-shadow: 0 -5px 8px rgb(0 0 0 / 10%);
+    }
+
+    #btn-oscuro,
+    #btn-oscuro:hover {
+        font-size: 0.7em;
+        padding: 5px 8px;
+    }
+}
