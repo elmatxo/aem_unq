@@ -1,3 +1,3 @@
-# Proyecto final integrador | TICMAS
+# TP1 | El audiovisual en la estructura multimedial, UNQ
 
-Desarrollo de curriculum vitae utilizando HTML, CSS y JavaScript como proyecto final integrador del curso "Primeros pasos del desarrollo frontend" (TICMAS).
+Desarrollo
