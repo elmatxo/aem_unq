@@ -1,0 +1,45 @@
+/*
+ TP1, AEM - UNQ | CSS v. 1.0
+ Copyright 2024 (c) Matias Petrini
+ Prohibida su copia total o parcial. Todos los derechos reservados.
+*/
+
+/**
+* 1.0 - Tipografías
+*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100..900&family=Merriweather:wght@400;700&display=swap');
+/**
+* 2.0 - Resetea la configuración por defecto
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { border: 0; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; margin: 0; outline: 0; padding: 0; vertical-align: baseline; }
+img { max-width: 100%; }
+sup { vertical-align: super; font-size: smaller; }
+html { font-size: 100%; -webkit-text-size-adjust: 100%;	-ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main { display: block; }
+ol, ul { list-style: none; }
+body { font-family: 'Inter', sans-serif; font-size: 20px; line-height: 32px; background-color: #fff; color: #000; }
+p { margin-bottom: 1.5em; text-align: justify; }
+p.aem-quote { font-size: 14px; line-height: 26px; text-align: justify; max-width: 650px; width: 100%; margin-left: 250px; }
+p.aem-quote-right { font-size: 14px; line-height: 26px; text-align: right; margin-top: 0.2px; }
+strong { font-weight: 700; }
+em { font-style: italic; }
+a, a:link, a:visited { color: #e13121; font-weight: 700; text-decoration: none; }
+a:hover { color: #855691; font-weight: 700; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+h1{font-family: 'Anton', sans-serif; font-size: 33px; line-height: 50px;margin: 0px auto 0.2em;color:#fff; background-color: #000; padding: 3px 15px; display: inline-block;}
+h2{font-family: 'Anton', sans-serif; font-size: 14px;margin: 0px auto;width: 100%;color:#fff; background-color: #000; text-transform: uppercase;}
+h3{font-family: 'Merriweather', sans-serif; font-size: 23px; line-height: 35px;margin: 1.5em 0px;width: 100%;font-weight: 700; text-align: justify; }
+h4{font-family: 'Anton', sans-serif; font-size: 14px;margin: 0px auto;width: 100%;color:#fff; background-color: #000; text-transform: uppercase;}
+h5{font-family: 'Anton', sans-serif; font-size: 11px;margin: 0px auto;width: 100%;color:#fff; background-color: #000; text-transform: uppercase;}
+#aem-tp1-header { width: 100%; background-color: #000; }
+#aem-tp1-splash { width: 100%; height: 450px; background-color: #ccc; }
+#aem-tp1-content { width: 100%; margin: 0 auto; }
+#aem-tp1-footer { width: 100%; background-color: #202020; text-align: center; font-size: 14px; line-height: 22px; color: #ccc; }
+div.aem-wrapper { max-width: 1000px; width: 100%; margin: 0 auto; padding: 50px; }
+div.aem-wrapper-notpadding { max-width: 1000px; width: 100%; margin: 0 auto; }
+div.aem-youtube { margin: 1.5em auto; text-align: center; }
+.tooltip { position: relative; margin: 0px 0px 0px 2px; }
+.tooltip .tooltiptext { visibility: hidden; width: 500px; background-color: #555; color: #fff; text-align: justify; border-radius: 6px; padding: 8px 10px; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -250px; opacity: 0; transition: opacity 0.3s; font-size: 11px; line-height: 18px; }
+.tooltip .tooltiptext::after { content: ""; position: absolute; top: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: #555 transparent transparent transparent; }
+.tooltip:hover .tooltiptext { visibility: visible; opacity: 1; }
+.aem-tooltip-info { width: 20px; height: 20px; border: 0px; }
