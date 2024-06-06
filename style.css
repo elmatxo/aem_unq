@@ -17,7 +17,7 @@ sup { vertical-align: super; font-size: smaller; }
 html { font-size: 100%; -webkit-text-size-adjust: 100%;	-ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 *, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main { display: block; }
-body { font-family: 'Inter', sans-serif; font-size: 20px; line-height: 32px; background-color: #fff; color: #000; }
+body { font-family: 'Inter', sans-serif; font-size: 20px; line-height: 32px; background-color: #fff; color: #000; overflow-x: hidden; }
 p { margin-bottom: 1.5em; text-align: justify; }
 p.aem-quote { font-size: 14px; line-height: 26px; text-align: justify; max-width: 650px; width: 100%; margin-left: 250px; }
 p.aem-quote-right { font-size: 14px; line-height: 26px; text-align: right; margin-top: 0.2px; }
